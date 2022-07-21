@@ -1,48 +1,9 @@
-//Color
-$primary:#FF9314;
-$offyellow:#F0E7C4;
-
-//Font size
-$font-size-root:18px;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
 
 
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
-
-$custom-font-size:(
-22px: 22px,
-32px: 32px,
-);
-
-$font-sizes:map-merge($custom-font-size, $font-sizes);
-
-$custom-theme-colors:(
-	"offyellow":$offyellow,
-);
-
-$theme-colors:map-merge($custom-theme-colors,$theme-colors);
-$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
-
-
-$utilities-bg-colors: map-loop($theme-colors, rgba-css-var, "$key", "bg");
-
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-
-// 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
-// 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
-
-// 5. Add additional custom code here
-
-
+*{
+	font-family: 'Work Sans', sans-serif;
+}
 .placeholder-white::placeholder{
 color:white;
 }
@@ -54,5 +15,22 @@ width:78px;
 
 .navbar-border-top{
 box-shadow: 0px 2px 2px 0px rgba(238, 238, 238, 0.25) inset;
+}
 
+.card-shadow{
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card{
+.img-frame{
+height:250px;
+align-item:center;
+justify-content:center;
+
+.img{
+display:flex;
+align-item:center;
+justify-content:center;
+}
+}
 }
