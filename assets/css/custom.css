@@ -217,6 +217,9 @@
 .page-body .main .main-stage-body {
   padding-left: 38px;
 }
+.page-body .main .main-stage-body .main-stage-question .question-item .glossary-icon {
+  cursor: pointer;
+}
 .page-body .main .main-stage-body .main-stage-question .question-item .question {
   font-size: 22px;
   font-weight: 600;

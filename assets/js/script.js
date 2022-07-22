@@ -20,19 +20,22 @@ $(document).ready(function(){
 
 
   var accItem = $('.sidebar-right .nav-item');
-  var accHD = $('.sidebar-right .nav-link');
+  var accHD = $("[data-toggle=sidebar-right]");
 
   for (i = 0; i < accHD.length; i++) {
     accHD[i].addEventListener('click', toggleItem, false);
   }
+
   function toggleItem() {
-    var itemClass = this.parentNode.className;
+    var target = $(this).data('target');
+    var itemClass = $(target).parent().attr('class');
     for (i = 0; i < accItem.length; i++) {
       accItem[i].className = 'nav-item close';
     }
     if (itemClass == 'nav-item close') {
-      this.parentNode.className = 'nav-item open';
+      $(target).parent().addClass('nav-item open');
     }
+
   }
 
 
