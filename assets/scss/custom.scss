@@ -309,5 +309,101 @@ $grayblue:#414977;
 				}
 			}
 		}
+
 	}
+	.map-journey-content{
+		.item{
+			position:absolute;
+			.item-content{
+				width: 150px;
+				display: block;
+				.icon{
+					width: 50%;
+					display: flex;
+					align-items:center;
+					text-decoration: none;
+					font-weight: 600;
+					.pin-icon{
+						position: relative;
+						display: flex;
+						align-items:center;
+						justify-content: center;
+						margin-right: 10px;
+						.number{
+							position: absolute;
+							text-decoration: none;
+							color:black;
+							left: 50%;
+							margin-left: -5px;
+							margin-top: -5px;
+							font-size: 20px;
+							font-weight: 700;
+							color: white;
+						}
+						img{
+						}
+					}
+				}
+				.tagline{
+					font-size: 22px;
+					color: $purplehue1;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.item:not(.active){
+			.item-content{
+
+				.tagline{
+					font-size: 18px;
+					font-weight: 500;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.item.item-1{
+			top: 30px;
+			left: 200px;
+		}
+
+		.item.item-2{
+			top: 30px;
+			left: 650px;
+		}
+
+		.item.item-3{
+			top: 30px;
+			left: 1100px;
+		}
+		.item.item-4{
+			top: 210px;
+			left: 900px;
+		}
+
+		.item.item-5{
+			top: 210px;
+			left: 390px;
+		}
+
+		.item.item-6{
+			top: 340px;
+			left: 40px;
+		}
+
+		.item.item-7{
+			top: 440px;
+			left: 550px;
+		}
+
+		.item.item-8{
+			top: 440px;
+			left: 1100px;
+		}
+	}
+}
+.page-body#map-journey{
+	background-image: url("../img/map_journey.png");
+	background-size: cover;
 }
