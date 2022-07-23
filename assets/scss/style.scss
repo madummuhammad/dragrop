@@ -5,6 +5,7 @@ $purplehue1:#5E6BE1;
 $purplehue2:#B7C1FF;
 $putih:#fff;
 $light:#F0F0F0;
+$brightyellow:#FFF51D;
 $grayblue:rgba(53, 61, 105, 1);
 
 
@@ -24,6 +25,7 @@ $custom-font-size:(
 	22px: 22px,
 	24px: 24px,
 	32px: 32px,
+	30px: 30px,
 	80px:80px,
 	);
 
@@ -35,6 +37,7 @@ $custom-theme-colors:(
 	"purplehue2":$purplehue2,
 	"grayblue":$grayblue,
 	"putih":$putih,
+	"brightyellow":$brightyellow,
 	);
 
 $theme-colors:map-merge($custom-theme-colors,$theme-colors);
@@ -52,6 +55,7 @@ $utilities-text: map-merge(
 		"purplehue2":$purplehue2,
 		"grayblue":$grayblue,
 		"putih":$putih,
+		"brightyellow":$brightyellow,
 		)
 	);
 $utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text");

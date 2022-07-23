@@ -1,24 +1,5 @@
 $(document).ready(function(){
 
-  // var btn_sidebar_right = $("[data-toggle=sidebar-right]");
-
-  // for (let i = 0; i < btn_sidebar_right.length; i++) {
-
-  //   btn_sidebar_right[i].onclick = function () {
-
-  //     var itemClass=this.className;
-
-  //     $(this).addClass('active')
-
-  //     if (itemClass=="nav-link active") {
-
-  //       $(this).removeClass('active');
-  //     }
-
-  //   }
-  // }
-
-
   var accItem = $('.sidebar-right .nav-item');
   var accHD = $("[data-toggle=sidebar-right]");
 
@@ -38,6 +19,23 @@ $(document).ready(function(){
 
   }
 
+  $('.owl-carousel').owlCarousel({
+    autoWidth:true,
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      1000:{
+        items:2
+      }
+    }
+  })
 
   var myModal = new bootstrap.Modal(document.getElementById('login'), {
     keyboard: false
