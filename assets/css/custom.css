@@ -439,6 +439,9 @@
   top: 440px;
   left: 1100px;
 }
+.page-body .main-login {
+  width: 100%;
+}
 
 .page-body#map-journey {
   background-image: url("../img/map_journey.png");
