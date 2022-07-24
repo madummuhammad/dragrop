@@ -42,6 +42,9 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
+#login .modal-content .row :first-child div:nth-child(1) {
+  display: none;
+}
 #login .modal-content .row :last-child {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -526,10 +529,98 @@
   top: 30%;
   right: 55%;
 }
+.page-body .main-login .row div:nth-child(1) a {
+  display: none !important;
+}
 
 .page-body#map-journey {
   background-image: url("../img/map_journey.png");
   background-size: cover;
+}
+
+@media (max-width: 576px) {
+  .navbar .navbar-collapse .navbar-nav a {
+    text-align: center;
+  }
+  .navbar .navbar-collapse form {
+    justify-content: space-between !important;
+  }
+  .navbar .navbar-collapse form .navbar-form-control {
+    width: 100%;
+  }
+  #login .modal-content .row :first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
+  #login .modal-content .row :first-child div:nth-child(1) {
+    display: block;
+  }
+  #login .modal-content .row :first-child div:nth-child(1) a {
+    font-size: 28px !important;
+  }
+  #login .modal-content .row :last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #login .modal-content .row :last-child div:nth-child(1) a {
+    display: none;
+  }
+  .page-body .stage .stage-top .icon {
+    font-size: 23px;
+  }
+  .page-body .stage .stage-top p {
+    font-size: 16px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help {
+    width: 50vw;
+  }
+  .page-body .main-login .img-login .stick-left {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+  }
+  .page-body .main-login .img-login .stick-right {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+  }
+  .page-body .main-login .img-login .stick-center {
+    position: absolute;
+    top: 2%;
+    right: 50%;
+  }
+  .page-body .main-login .row div:nth-child(1) a {
+    display: flex !important;
+    font-size: 24px;
+  }
+  .page-body .main-login .row div:nth-child(2) a {
+    display: none !important;
+  }
+  .page-body .main-t-and-c .main-t-and-c-top .title {
+    font-size: 18px;
+    letter-spacing: -0.08rem;
+  }
+  .page-body .main-t-and-c .main-t-and-c-top button {
+    font-size: 18px;
+    border-radius: 60px;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item {
+    width: 100vw;
+  }
+  .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left {
+    position: relative;
+    width: 100%;
+  }
+  .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left .container-comment {
+    left: 10%;
+    bottom: 14%;
+  }
 }
 
 /*# sourceMappingURL=custom.css.map */
