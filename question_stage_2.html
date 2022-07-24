@@ -98,7 +98,7 @@
 			<div class="sidebar-body">
 				<ul class="nav flex-column">
 					<li class="nav-item close">
-						<a class="nav-link" aria-current="page" href="#" data-toggle="sidebar-right" data-target="#sidebarcontent1"><i class="fa-solid fa-book"></i></a>
+						<a class="nav-link active" aria-current="page" href="#" data-toggle="sidebar-right" data-target="#sidebarcontent1"><i class="fa-solid fa-book"></i></a>
 						<div class="sidebar-content" id="sidebarcontent1">
 							<div class="sidebar-title">
 								<h2>GLOSSARY</h2>
@@ -144,15 +144,28 @@
 						</div>
 					</li>
 					<li class="nav-item close">
-						<a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-circle-exclamation"></i></a>
+						<a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-circle-exclamation" data-toggle="sidebar-right" data-target="#sidebarcontent4"></i></a>
 					</li>
 					<li class="nav-item close">
-						<a class="nav-link" aria-current="page" href="#" data-toggle="sidebar-right" data-target="#sidebarcontent3"><i class="fa-solid fa-comment"></i></a>
+						<a class="nav-link active" aria-current="page" href="#" data-toggle="sidebar-right" data-target="#sidebarcontent3"><i class="fa-solid fa-comment"></i></a>
 						<div class="sidebar-content" id="sidebarcontent3">
 							<div class="sidebar-title">
 								<h2>CHAT</h2>
 							</div>
 							<div class="sidebar-content-body">
+								<div class="chat-container">
+									<div class="form-message">
+										<div class="message-item">
+											<div class="message">
+												<img class="img-fluid" src="assets/img/profile.jpg" alt="">
+												<p>Hi, Good morning [logged-in name]! How may we help you?</p>
+											</div>
+										</div>
+									</div>
+									<div class="form-chat p-2">
+										<textarea name="" id="" rows="2" placeholder="Type a message"></textarea>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
@@ -169,7 +182,7 @@
 					<h2 class="main-stage-title fs-1 text-primary">Tell us more about P</h2>
 					<div class="main-stage-question">
 						<div class="question-item">
-							<p class="question text-grayblue">1. Has P <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1"><i class="fa-solid fa-book"></i></a> been medically certified as lacking mental capacity <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1"><i class="fa-solid fa-book"></i></a> to make decisions?</p>
+							<p class="question text-grayblue">1. Has P <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-book"></i></a> been medically certified as lacking mental capacity <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-book"></i></a> to make decisions?</p>
 							<div class="answer">
 								<div class="mt-4 mb-2">
 									<div class="form-check form-check-inline text-grayblue">
@@ -185,7 +198,7 @@
 							</div>
 						</div>
 						<div class="question-item">
-							<p class="question text-grayblue">2. Does P have a Lasting Power of Attorney (LPA) <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1"><i class="fa-solid fa-book"></i></a> ?</p>
+							<p class="question text-grayblue">2. Does P have a Lasting Power of Attorney (LPA) <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-book"></i></a> ?</p>
 							<div class="answer">
 								<div class="mt-4 mb-2">
 									<div class="form-check form-check-inline text-grayblue">
@@ -201,12 +214,12 @@
 										<label class="form-check-label" for="inlineCheckbox222">Unsure</label>
 									</div>
 								</div>
-								<p class="text-purplehue1">You can access the Office of the Public Guardian's e-services portal <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1"><i class="fa-solid fa-book"></i></a> in the Resources tab <a data-toggle="sidebar-right" data-target="#sidebarcontent2" class="glossary-icon text-purplehue1"><i class="fa-solid fa-circle-exclamation"></i></a> to perform a search request for Lasting Power of Attorney (LPA).</p>
+								<p class="text-purplehue1">You can access the Office of the Public Guardian's e-services portal <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-book"></i></a> in the Resources tab <a data-toggle="sidebar-right" data-target="#sidebarcontent2" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-circle-exclamation"></i></a> to perform a search request for Lasting Power of Attorney (LPA).</p>
 								<p class="text-purplehue1">if <span class="fw-bold">"Yes"</span>: You need not apply for Deputyship as P has appointed a Donee under the Lasting Power of Affairs to make decisions on his/her behalf.</p>
 							</div>
 						</div>
 						<div class="question-item">
-							<p class="question text-grayblue">3. Is P is residing in a nursing / old folks/ werlfare home? <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1"><i class="fa-solid fa-book"></i></a> ?</p>
+							<p class="question text-grayblue">3. Is P is residing in a nursing / old folks/ werlfare home? <a data-toggle="sidebar-right" data-target="#sidebarcontent1" class="glossary-icon text-purplehue1 active"><i class="fa-solid fa-book"></i></a> ?</p>
 							<div class="answer">
 								<div class="mt-4 mb-2">
 									<div class="form-check form-check-inline text-grayblue">
