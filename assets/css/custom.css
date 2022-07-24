@@ -150,6 +150,25 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  position: relative;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  border: 2px solid #5E6BE1;
+  border-radius: 8px;
+  font-size: 20px;
+  width: 15vw;
+  display: none;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help::after {
+  position: absolute;
+  content: url("../img/icon/triangle.svg");
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 100%;
 }
 .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content {
   position: absolute;

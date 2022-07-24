@@ -29,15 +29,7 @@
     }
 
     function toggleItem2() {
-      // var target = $(this).data('target');
-      // var itemClass2 = $(target).parent().attr('class');
-      // for (i = 0; i < accItem2.length; i++) {
-      //   accItem2[i].className = 'nav-item close';
-      // }
-      // if (itemClass2 == 'nav-item close') {
-      //   $(target).parent().addClass('nav-item open');
-      // }
-      alert('adfasdf');
+      $(".disclaimer-for-help").toggle();
 
     }
 
