@@ -476,36 +476,36 @@
   text-decoration: none;
 }
 .page-body .map-journey-content .item.item-1 {
-  top: 30px;
-  left: 200px;
+  top: 5vh;
+  left: 15vw;
 }
 .page-body .map-journey-content .item.item-2 {
-  top: 30px;
-  left: 650px;
+  top: 5vh;
+  left: 48vw;
 }
 .page-body .map-journey-content .item.item-3 {
-  top: 30px;
-  left: 1100px;
+  top: 5vh;
+  left: 80vw;
 }
 .page-body .map-journey-content .item.item-4 {
-  top: 210px;
-  left: 900px;
+  top: 35vh;
+  left: 70vw;
 }
 .page-body .map-journey-content .item.item-5 {
-  top: 210px;
-  left: 390px;
+  top: 35vh;
+  left: 30vw;
 }
 .page-body .map-journey-content .item.item-6 {
-  top: 340px;
-  left: 40px;
+  top: 53vh;
+  left: 4vw;
 }
 .page-body .map-journey-content .item.item-7 {
-  top: 440px;
-  left: 550px;
+  top: 68vh;
+  left: 40vw;
 }
 .page-body .map-journey-content .item.item-8 {
-  top: 440px;
-  left: 1100px;
+  top: 68vh;
+  left: 80vw;
 }
 .page-body .main-login {
   width: 100%;
