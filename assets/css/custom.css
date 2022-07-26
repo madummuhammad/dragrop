@@ -516,18 +516,18 @@
 }
 .page-body .main-login .img-login .stick-left {
   position: absolute;
-  top: 15%;
-  left: 10%;
+  top: 15vh;
+  left: 8vw;
 }
 .page-body .main-login .img-login .stick-right {
   position: absolute;
-  top: 20%;
-  right: 10%;
+  top: 20vh;
+  right: 1vw;
 }
 .page-body .main-login .img-login .stick-center {
   position: absolute;
-  top: 30%;
-  right: 55%;
+  top: 30vh;
+  left: 20vw;
 }
 .page-body .main-login .row div:nth-child(1) a {
   display: none !important;
