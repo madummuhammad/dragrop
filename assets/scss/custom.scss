@@ -412,7 +412,7 @@ $brightyellow:#FFF51D;
 				font-size: 30px;
 				padding: 0px;
 			}
-			button{
+			a{
 				color: $grayblue;
 				font-weight: 700;
 				font-size: 24px;
@@ -544,7 +544,17 @@ $brightyellow:#FFF51D;
 							font-weight: 700;
 							color: white;
 						}
-						img{
+						.pin{
+							display: none;
+
+						}
+
+						.check{
+							display: none;
+						}
+
+						.number{
+							display: block;
 						}
 					}
 				}
@@ -556,6 +566,57 @@ $brightyellow:#FFF51D;
 			}
 		}
 
+		.item.active{
+			.item-content{
+				.icon{
+					.pin-icon{
+						.pin{
+							display: block;
+						}
+
+						.circle{
+							display: none;
+						}
+
+						.check{
+							display: none;
+						}
+
+						.number{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		.item.done{
+			.item-content{
+				.icon{
+					.pin-icon{
+						.pin{
+							display: none;
+						}
+
+						.circle{
+							display: none;
+						}
+
+						.check{
+							display: block;
+						}
+
+						.number{
+							display: none;
+						}
+					}
+				}
+
+				.begin-here{
+					display: none;
+				}
+			}
+		}
 		.item:not(.active){
 			.item-content{
 
@@ -641,7 +702,14 @@ $brightyellow:#FFF51D;
 .page-body#map-journey{
 	background-image: url("../img/map_journey.png");
 	background-size: cover;
+	display: block;
 }
+
+.page-body#map-journey-mobile{
+	display: none;
+
+}
+
 
 @media (max-width: 576px) {
 	.navbar{
@@ -859,7 +927,172 @@ $brightyellow:#FFF51D;
 		}
 	}
 
+	.page-body#map-journey{
+		display: none;
+	}
+
+	.page-body#map-journey-mobile{
+		display: block;
+		.row{
+			div{
+				position: relative;
+				.item{
+					top: 0;
+					right: 0;
+					position:absolute;
+					.item-content{
+						width: 150px;
+						display: block;
+						.icon{
+							width: 50%;
+							display: flex;
+							align-items:center;
+							text-decoration: none;
+							font-weight: 600;
+							.pin-icon{
+								position: relative;
+								display: flex;
+								align-items:center;
+								justify-content: center;
+								margin-right: 10px;
+								.number{
+									position: absolute;
+									text-decoration: none;
+									color:black;
+									left: 50%;
+									margin-left: -5px;
+									margin-top: -5px;
+									font-size: 20px;
+									font-weight: 700;
+									color: white;
+								}
+								.pin{
+									display: none;
+
+								}
+
+								.check{
+									display: none;
+								}
+
+								.number{
+									display: block;
+								}
+							}
+						}
+						.tagline{
+							font-size: 22px;
+							color: $purplehue1;
+							font-weight: 700;
+						}
+					}
+				}
+
+				.item.active{
+					.item-content{
+						.icon{
+							.pin-icon{
+								.pin{
+									display: block;
+								}
+
+								.circle{
+									display: none;
+								}
+
+								.check{
+									display: none;
+								}
+
+								.number{
+									display: block;
+								}
+							}
+						}
+					}
+				}
+
+				.item.done{
+					.item-content{
+						.icon{
+							.pin-icon{
+								.pin{
+									display: none;
+								}
+
+								.circle{
+									display: none;
+								}
+
+								.check{
+									display: block;
+								}
+
+								.number{
+									display: none;
+								}
+							}
+						}
+						.begin-here{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.item:not(.active){
+		.item-content{
+			.tagline{
+				font-size: 18px;
+				font-weight: 500;
+				text-decoration: none;
+			}
+		}
+	}
+
+	// .item.item-1{
+	// 	top: 5vh;
+	// 	left: 15vw;
+	// }
+
+	// .item.item-2{
+	// 	top: 5vh;
+	// 	left: 48vw;
+	// }
+
+	// .item.item-3{
+	// 	top: 5vh;
+	// 	left: 80vw;
+	// }
+	// .item.item-4{
+	// 	top: 35vh;
+	// 	left: 70vw
+	// }
+
+	// .item.item-5{
+	// 	top: 35vh;
+	// 	left: 30vw;
+	// }
+
+	// .item.item-6{
+	// 	top: 53vh;
+	// 	left: 4vw;
+	// }
+
+	// .item.item-7{
+	// 	top: 68vh;
+	// 	left: 40vw;
+	// }
+
+	// .item.item-8{
+	// 	top: 68vh;
+	// 	left: 80vw;
+	// }
 }
+
 
 @media (max-width: 768px) {
 }

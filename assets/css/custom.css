@@ -348,7 +348,7 @@
   font-size: 30px;
   padding: 0px;
 }
-.page-body .main-t-and-c .main-t-and-c-top button {
+.page-body .main-t-and-c .main-t-and-c-top a {
   color: #414977;
   font-weight: 700;
   font-size: 24px;
@@ -465,10 +465,46 @@
   font-weight: 700;
   color: white;
 }
+.page-body .map-journey-content .item .item-content .icon .pin-icon .pin {
+  display: none;
+}
+.page-body .map-journey-content .item .item-content .icon .pin-icon .check {
+  display: none;
+}
+.page-body .map-journey-content .item .item-content .icon .pin-icon .number {
+  display: block;
+}
 .page-body .map-journey-content .item .item-content .tagline {
   font-size: 22px;
   color: #5E6BE1;
   font-weight: 700;
+}
+.page-body .map-journey-content .item.active .item-content .icon .pin-icon .pin {
+  display: block;
+}
+.page-body .map-journey-content .item.active .item-content .icon .pin-icon .circle {
+  display: none;
+}
+.page-body .map-journey-content .item.active .item-content .icon .pin-icon .check {
+  display: none;
+}
+.page-body .map-journey-content .item.active .item-content .icon .pin-icon .number {
+  display: block;
+}
+.page-body .map-journey-content .item.done .item-content .icon .pin-icon .pin {
+  display: none;
+}
+.page-body .map-journey-content .item.done .item-content .icon .pin-icon .circle {
+  display: none;
+}
+.page-body .map-journey-content .item.done .item-content .icon .pin-icon .check {
+  display: block;
+}
+.page-body .map-journey-content .item.done .item-content .icon .pin-icon .number {
+  display: none;
+}
+.page-body .map-journey-content .item.done .item-content .begin-here {
+  display: none;
 }
 .page-body .map-journey-content .item:not(.active) .item-content .tagline {
   font-size: 18px;
@@ -536,6 +572,11 @@
 .page-body#map-journey {
   background-image: url("../img/map_journey.png");
   background-size: cover;
+  display: block;
+}
+
+.page-body#map-journey-mobile {
+  display: none;
 }
 
 @media (max-width: 576px) {
@@ -620,6 +661,95 @@
   .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left .container-comment {
     left: 10%;
     bottom: 14%;
+  }
+  .page-body#map-journey {
+    display: none;
+  }
+  .page-body#map-journey-mobile {
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div {
+    position: relative;
+  }
+  .page-body#map-journey-mobile .row div .item {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content {
+    width: 150px;
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon .pin-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon .pin-icon .number {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon .pin-icon .pin {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon .pin-icon .check {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .icon .pin-icon .number {
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div .item .item-content .tagline {
+    font-size: 22px;
+    color: #5E6BE1;
+    font-weight: 700;
+  }
+  .page-body#map-journey-mobile .row div .item.active .item-content .icon .pin-icon .pin {
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div .item.active .item-content .icon .pin-icon .circle {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item.active .item-content .icon .pin-icon .check {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item.active .item-content .icon .pin-icon .number {
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div .item.done .item-content .icon .pin-icon .pin {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item.done .item-content .icon .pin-icon .circle {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item.done .item-content .icon .pin-icon .check {
+    display: block;
+  }
+  .page-body#map-journey-mobile .row div .item.done .item-content .icon .pin-icon .number {
+    display: none;
+  }
+  .page-body#map-journey-mobile .row div .item.done .item-content .begin-here {
+    display: none;
+  }
+  .item:not(.active) .item-content .tagline {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
   }
 }
 
