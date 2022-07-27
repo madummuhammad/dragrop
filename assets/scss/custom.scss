@@ -224,9 +224,9 @@ $brightyellow:#FFF51D;
 							margin-bottom: 18px;
 						}
 						.sidebar-content-body{
-							overflow: auto;
+							overflow: scroll;
 							line-height: 25px;
-							max-height:100vh;
+							max-height:90vh;
 							.item{
 								.word{
 									p{
@@ -242,7 +242,7 @@ $brightyellow:#FFF51D;
 
 						.chat-container
 						{
-							height: 100vh;
+							height: 90vh;
 							background-color: white;
 							position: relative;
 							border-bottom-right-radius:10px;
@@ -633,58 +633,58 @@ $brightyellow:#FFF51D;
 		}
 
 		.item.item-1{
-			top: 60px;
-			left: 200px;
-			// top: 5vh;
-			// left: 15vw;
+			// top: 60px;
+			// left: 200px;
+			top: 5vh;
+			left: 15vw;
 		}
 
 		.item.item-2{
-			top: 60px;
-			left: 650px;
-			// top: 5vh;
-			// left: 48vw;
+			// top: 60px;
+			// left: 650px;
+			top: 5vh;
+			left: 48vw;
 		}
 
 		.item.item-3{
-			top: 60px;
-			left: 1100px;
-			// top: 5vh;
-			// left: 80vw;
+			// top: 60px;
+			// left: 1100px;
+			top: 5vh;
+			left: 80vw;
 		}
 		.item.item-4{
-			top: 260px;
-			left: 940px;
-			// top: 35vh;
-			// left: 70vw
+			// top: 260px;
+			// left: 940px;
+			top: 35vh;
+			left: 70vw
 		}
 
 		.item.item-5{
-			top: 260px;
-			left: 460px;
-			// top: 35vh;
-			// left: 30vw;
+			// top: 260px;
+			// left: 460px;
+			top: 35vh;
+			left: 30vw;
 		}
 
 		.item.item-6{
-			top: 400px;
-			left:50px;
-			// top: 53vh;
-			// left: 4vw;
+			// top: 400px;
+			// left:50px;
+			top: 53vh;
+			left: 4vw;
 		}
 
 		.item.item-7{
-			top: 480px;
-			left: 550px;
-			// top: 68vh;
-			// left: 40vw;
+			// top: 480px;
+			// left: 550px;
+			top: 68vh;
+			left: 40vw;
 		}
 
 		.item.item-8{
-			top: 480px;
-			left: 1040px;
-			// top: 68vh;
-			// left: 80vw;
+			// top: 480px;
+			// left: 1040px;
+			top: 68vh;
+			left: 80vw;
 		}
 	}
 	.main-login{
@@ -722,7 +722,7 @@ $brightyellow:#FFF51D;
 .page-body#map-journey{
 	background-image: url("../img/map_journey.png");
 	// background-size: cover;
-	background-position: center;
+	// background-position: center;
 	background-repeat: no-repeat;
 	display: block;
 }
@@ -1121,4 +1121,63 @@ $brightyellow:#FFF51D;
 @media (max-width: 768px) {
 }
 @media (max-width: 992px) {
+}
+
+@media (min-width: 1440px) {
+	.page-body#map-journey{
+		.map-journey-content{
+			.item.item-1{
+				top: 5vh;
+				left: 14vw;
+			}
+
+			.item.item-2{
+				top: 5vh;
+				left: 45vw;
+			}
+
+			.item.item-3{
+				top: 5vh;
+				left: 75vw;
+			}
+			.item.item-4{
+				top: 28vh;
+				left: 67vw
+			}
+
+			.item.item-5{
+				top: 28vh;
+				left: 30vw;
+			}
+
+			.item.item-6{
+				top: 45vh;
+				left: 4vw;
+			}
+
+			.item.item-7{
+				top: 55vh;
+				left: 40vw;
+			}
+
+			.item.item-8{
+				top: 55vh;
+				left: 75vw;
+			}
+		}
+	}
+
+	.page-body{
+		.main-t-and-c{
+			.main-t-and-c-carousel{
+				.owl-carousel{
+					.item{
+						.row{
+							height: 50vh;
+						}
+					}
+				}
+			}
+		}
+	}
 }
