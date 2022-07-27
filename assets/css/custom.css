@@ -357,9 +357,12 @@
   padding: 3px 10px;
 }
 .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item {
+  height: 100%;
   width: 55vw;
-  background-color: white;
   padding: 8px;
+}
+.page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row {
+  height: 80vh;
 }
 .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left {
   position: relative;
@@ -432,6 +435,9 @@
 }
 .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row div:nth-child(2) .container-check input:focus {
   box-shadow: none;
+}
+.page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item-last {
+  width: 25vw;
 }
 .page-body .map-journey-content .item {
   position: absolute;
@@ -653,6 +659,9 @@
   }
   .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item {
     width: 100vw;
+  }
+  .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row {
+    height: 920px;
   }
   .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left {
     position: relative;

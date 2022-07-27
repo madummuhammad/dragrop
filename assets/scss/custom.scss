@@ -425,10 +425,11 @@ $brightyellow:#FFF51D;
 		.main-t-and-c-carousel{
 			.owl-carousel{
 				.item{
+					height: 100%;
 					width: 55vw;
-					background-color: white;
 					padding: 8px;
 					.row{
+						height: 80vh;
 						.left{
 							position:relative;
 							width: 100%;
@@ -511,6 +512,9 @@ $brightyellow:#FFF51D;
 							}
 						}
 					}
+				}
+				.item-last{
+					width: 25vw;
 				}
 			}
 		}
@@ -881,6 +885,7 @@ $brightyellow:#FFF51D;
 					.item{
 						width: 100vw;
 						.row{
+							height: 920px;
 							.left{
 								position:relative;
 								width: 100%;
@@ -1052,6 +1057,7 @@ $brightyellow:#FFF51D;
 			}
 		}
 	}
+
 
 	// .item.item-1{
 	// 	top: 5vh;

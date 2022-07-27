@@ -7757,6 +7757,10 @@ textarea.form-control-lg {
   font-family: var(--bs-font-monospace) !important;
 }
 
+.fs-12px {
+  font-size: 0.75rem !important;
+}
+
 .fs-22px {
   font-size: calc(1.2625rem + 0.15vw) !important;
 }
