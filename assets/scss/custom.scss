@@ -633,42 +633,58 @@ $brightyellow:#FFF51D;
 		}
 
 		.item.item-1{
-			top: 5vh;
-			left: 15vw;
+			top: 60px;
+			left: 200px;
+			// top: 5vh;
+			// left: 15vw;
 		}
 
 		.item.item-2{
-			top: 5vh;
-			left: 48vw;
+			top: 60px;
+			left: 650px;
+			// top: 5vh;
+			// left: 48vw;
 		}
 
 		.item.item-3{
-			top: 5vh;
-			left: 80vw;
+			top: 60px;
+			left: 1100px;
+			// top: 5vh;
+			// left: 80vw;
 		}
 		.item.item-4{
-			top: 35vh;
-			left: 70vw
+			top: 260px;
+			left: 940px;
+			// top: 35vh;
+			// left: 70vw
 		}
 
 		.item.item-5{
-			top: 35vh;
-			left: 30vw;
+			top: 260px;
+			left: 460px;
+			// top: 35vh;
+			// left: 30vw;
 		}
 
 		.item.item-6{
-			top: 53vh;
-			left: 4vw;
+			top: 400px;
+			left:50px;
+			// top: 53vh;
+			// left: 4vw;
 		}
 
 		.item.item-7{
-			top: 68vh;
-			left: 40vw;
+			top: 480px;
+			left: 550px;
+			// top: 68vh;
+			// left: 40vw;
 		}
 
 		.item.item-8{
-			top: 68vh;
-			left: 80vw;
+			top: 480px;
+			left: 1040px;
+			// top: 68vh;
+			// left: 80vw;
 		}
 	}
 	.main-login{
@@ -705,7 +721,9 @@ $brightyellow:#FFF51D;
 }
 .page-body#map-journey{
 	background-image: url("../img/map_journey.png");
-	background-size: cover;
+	// background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: block;
 }
 

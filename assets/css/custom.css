@@ -518,36 +518,36 @@
   text-decoration: none;
 }
 .page-body .map-journey-content .item.item-1 {
-  top: 5vh;
-  left: 15vw;
+  top: 60px;
+  left: 200px;
 }
 .page-body .map-journey-content .item.item-2 {
-  top: 5vh;
-  left: 48vw;
+  top: 60px;
+  left: 650px;
 }
 .page-body .map-journey-content .item.item-3 {
-  top: 5vh;
-  left: 80vw;
+  top: 60px;
+  left: 1100px;
 }
 .page-body .map-journey-content .item.item-4 {
-  top: 35vh;
-  left: 70vw;
+  top: 260px;
+  left: 940px;
 }
 .page-body .map-journey-content .item.item-5 {
-  top: 35vh;
-  left: 30vw;
+  top: 260px;
+  left: 460px;
 }
 .page-body .map-journey-content .item.item-6 {
-  top: 53vh;
-  left: 4vw;
+  top: 400px;
+  left: 50px;
 }
 .page-body .map-journey-content .item.item-7 {
-  top: 68vh;
-  left: 40vw;
+  top: 480px;
+  left: 550px;
 }
 .page-body .map-journey-content .item.item-8 {
-  top: 68vh;
-  left: 80vw;
+  top: 480px;
+  left: 1040px;
 }
 .page-body .main-login {
   width: 100%;
@@ -577,7 +577,8 @@
 
 .page-body#map-journey {
   background-image: url("../img/map_journey.png");
-  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
 }
 
