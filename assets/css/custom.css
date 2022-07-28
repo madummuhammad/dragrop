@@ -382,7 +382,7 @@
 .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left .container-comment {
   position: absolute;
   left: 20%;
-  bottom: 10px;
+  top: 70%;
 }
 .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row .left .container-comment .comment {
   width: 100%;
@@ -794,7 +794,7 @@
     left: 75vw;
   }
   .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row {
-    height: 50vh;
+    height: 65vh;
   }
 }
 

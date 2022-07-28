@@ -449,7 +449,7 @@ $brightyellow:#FFF51D;
 							.container-comment{
 								position:absolute;
 								left: 20%;
-								bottom:10px;
+								top:70%;
 								.comment{
 									width: 100%;
 									position: relative;
@@ -1173,7 +1173,8 @@ $brightyellow:#FFF51D;
 				.owl-carousel{
 					.item{
 						.row{
-							height: 50vh;
+							// height: 500px;
+							height: 65vh;
 						}
 					}
 				}
