@@ -588,11 +588,8 @@
   top: 30vh;
   left: 20vw;
 }
-.page-body .main-login .img-login img:before {
-  content: "asdfasdf";
-  position: absolute;
-  left: 0;
-  top: 0;
+.page-body .main-login .img-login .img-ilustrasi {
+  width: 100%;
 }
 .page-body .main-login .row {
   min-height: 100%;

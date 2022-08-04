@@ -725,14 +725,13 @@ $brightyellow:#FFF51D;
 				top: 30vh;
 				left: 20vw;
 			}
+
+			.img-ilustrasi{
+				width: 100%;
+			}
 		}
 
-		.img-login img:before{
-			content: "asdfasdf";
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
+	
 
 		.row{
 			min-height: 100%;
