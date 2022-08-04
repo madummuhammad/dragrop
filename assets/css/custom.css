@@ -11,6 +11,22 @@
   color: white;
 }
 
+.navbar-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.mt-170px {
+  margin-top: 170px;
+}
+
+.mt-145px {
+  margin-top: 145px;
+}
+
 .navbar-form-control {
   width: 78px;
 }
@@ -52,7 +68,6 @@
 
 .page-body {
   position: relative;
-  min-height: 100vh;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -80,6 +95,7 @@
   text-transform: uppercase;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14);
   color: rgb(53, 61, 105);
+  height: 80px !important;
 }
 .page-body .stage .stage-top .icon {
   font-size: 23px;
@@ -108,7 +124,7 @@
 .page-body .stage .stage-body .nav .nav-item .dash {
   border: 1px rgb(53, 61, 105);
   border-style: dashed;
-  height: 45px;
+  height: calc((100vh - 80px - 145px) / 7);
 }
 .page-body .stage .stage-body .nav .nav-item.active .circle-icon {
   width: 20px;
@@ -144,6 +160,7 @@
   background-size: 3px 12px;
   background-repeat: repeat-y;
   z-index: 1;
+  background-color: white;
 }
 .page-body .sidebar-right .sidebar-body {
   width: 100%;
@@ -281,6 +298,7 @@
 }
 .page-body .main .main-stage-top .number-of-stage {
   font-weight: 500;
+  padding-left: 35px;
 }
 .page-body .main .main-stage-top .number-of-question {
   font-weight: 300;
@@ -571,8 +589,14 @@
   top: 30vh;
   left: 20vw;
 }
+.page-body .main-login .row div:nth-child(1) {
+  min-height: 100vh;
+}
 .page-body .main-login .row div:nth-child(1) a {
   display: none !important;
+}
+.page-body .main-login .row div:last-child {
+  min-height: 100vh;
 }
 
 .page-body#map-journey {
@@ -758,6 +782,11 @@
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    min-height: 430px !important;
   }
 }
 @media (min-width: 1440px) {

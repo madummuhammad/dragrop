@@ -10,8 +10,38 @@
 	<link rel="stylesheet" href="assets/plugins/aos/aos.css">
 </head>
 <body>
-	<div class="nav-top bg-primary">
-		<div class="container-fluid">
+	<div class="navbar-sticky">
+		<div class="nav-top bg-primary">
+			<div class="container-fluid mx-4">
+				<p class="m-0 py-2"><span class="fw-bold fs-22px text-white">Community Justice Center</span><span class="px-2 text-white">|</span><span class="text-white">Self-Help-Pathfinder</span></p>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-border-top">
+			<div class="container-fluid mx-4">
+				<a class="navbar-brand" href="homepage.html"><img src="assets/img/icon/home.svg" alt=""></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link fs-32px active text" aria-current="page" href="homepage.html">Your journey to become a <span class="fw-bold">Deputy</span></a>
+						</li>
+					</ul>
+					<form class="d-flex justify-content-end">
+						<button class="btn btn-transparent text-white" type="submit"><i class="fas fa-search"></i></button>
+						<input class="form-control navbar-form-control me-2 p-0 bg-transparent border-0 text-white placeholder-white " type="search" placeholder="Search" aria-label="Search">
+						<div class="navbar-btn-login d-flex align-items-center">
+							<a href="#login" data-bs-toggle="modal" class="mt-0 mb-0 me-2 text-white">Login</a>
+							<img src="assets/img/icon/user.svg" alt="">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div class="nav-top bg-primary" style="visibility: hidden;">
+		<div class="container-fluid mx-4">
 			<p class="m-0 py-2"><span class="fw-bold fs-22px text-white">Community Justice Center</span><span class="px-2 text-white">|</span><span class="text-white">Self-Help-Pathfinder</span></p>
 		</div>
 	</div>
@@ -42,14 +72,15 @@
 		<div class="main-login" data-aos="zoom-in">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-8">
+					<div class="col-lg-8 pt-5">
 						<a class="d-flex justify-content-end w-100 p-2" href="homepage.html"><i class="fa-solid fa-xmark"></i></a>
-						<p class="fs-1 fw-bold text-center text-primary m-0">What is Deputyship?</p>
-						<img class="img-fluid" src="assets/img/ilustrasi/stages_stage_1_v1.png" alt="">
+						<p class="fs-1 fw-bold text-center text-primary m-0"
+						>What is Deputyship?</p>
+						<img class="img-fluid" src="assets/img/ilustrasi/stages_stage_1.png" alt="">
 					</div>
 					<div class="col-lg-4 bg-purplehue1">
-						<a class="d-flex justify-content-end w-100 p-2" href="homepage.html"><img src="assets/img/icon/xmark_white.svg" alt=""></a>
-						<div class="p-5 mt-4 text-white">
+						<a class="d-flex justify-content-end w-100 p-4" href="homepage.html"><img src="assets/img/icon/xmark_white.svg" alt=""></a>
+						<div class="p-5 mt-0 text-white">
 							<p>You are applying to make decisions on behalf of someone who is no longer capable of doing so, known as P.</p>
 							<p class="fw-bold">Login to your CJC account for a bespoke journey: </p>
 							<button class="btn btn-primary text-white px-4 mt-4">Login to CJC</button>

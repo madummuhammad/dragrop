@@ -15,6 +15,22 @@ $brightyellow:#FFF51D;
 	color:white;
 }
 
+.navbar-sticky{
+	position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.mt-170px{
+	margin-top: 170px;
+}
+
+.mt-145px{
+	margin-top: 145px;
+}
+
 .navbar-form-control{
 	width:78px;
 }
@@ -66,7 +82,7 @@ $brightyellow:#FFF51D;
 
 .page-body{
 	position:relative;
-	min-height: 100vh;
+	// min-height: 100vh;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
@@ -92,7 +108,8 @@ $brightyellow:#FFF51D;
 			line-height: 20px;
 			text-transform: uppercase;
 			box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14);
-			color: rgba(53, 61, 105, 1);;
+			color: rgba(53, 61, 105, 1);
+			height: 80px !important;
 			.icon{
 				font-size: 23px;
 			}
@@ -127,7 +144,7 @@ $brightyellow:#FFF51D;
 					.dash{
 						border:1px rgba(53, 61, 105, 1);
 						border-style:dashed;
-						height: 45px;
+						height: calc(calc(100vh - 80px - 145px) / 7);
 					}
 				}
 
@@ -178,7 +195,7 @@ $brightyellow:#FFF51D;
 		background-size: 3px 12px;
 		background-repeat: repeat-y;
 		z-index: 1;
-
+		background-color: white;
 		.sidebar-body{
 			width: 100%;
 			.nav{
@@ -337,6 +354,7 @@ $brightyellow:#FFF51D;
 			}
 			.number-of-stage{
 				font-weight: 500;
+				padding-left:35px;
 			}
 			.number-of-question{
 				font-weight: 300;
@@ -712,9 +730,18 @@ $brightyellow:#FFF51D;
 		.row{
 			div:nth-child(1)
 			{
+				min-height: 100vh;
 				a{
 					display: none !important;
 				}
+
+				.img-fluid{
+					// max-width: 1300px;
+				}
+			}
+
+			div:last-child{
+				min-height: 100vh;
 			}
 		}
 	}
@@ -1118,9 +1145,15 @@ $brightyellow:#FFF51D;
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+}
+
+@media (max-width: 1024px) {
+	.card{
+		min-height: 430px !important;
+	}
 }
 
 @media (min-width: 1440px) {
