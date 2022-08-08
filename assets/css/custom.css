@@ -43,6 +43,13 @@
   color: white !important;
 }
 
+.modal#login .modal-dialog {
+  width: 1140px;
+}
+
+.card {
+  min-height: 403px;
+}
 .card .img-frame {
   height: 250px;
   align-item: center;
@@ -64,6 +71,14 @@
 #login .modal-content .row :last-child {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.modal#login .modal-dialog {
+  width: 2280px;
+}
+.modal#login .modal-dialog .modal-body .form-login input {
+  width: 435px;
+  height: 48.5px;
 }
 
 .page-body {
@@ -277,7 +292,9 @@
 .page-body .main {
   position: relative;
   transition: width 0.25s ease, margin 0.25s ease;
-  width: calc(100% - 92px - 92px);
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 50px;
   height: 100%;
   display: -webkit-flex;
   display: flex;
@@ -868,6 +885,9 @@
   }
 }
 @media (min-width: 1440px) {
+  .container {
+    max-width: 85vw !important;
+  }
   .page-body .main-login .img-login .stick-left {
     position: absolute;
     top: 8%;
@@ -916,6 +936,308 @@
   }
   .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row {
     height: 65vh;
+  }
+}
+@media (min-width: 2400px) {
+  :root {
+    font-size: 20px;
+  }
+  body {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .mt-lg-216px {
+    margin-top: 216px;
+  }
+  .mt-lg-228px {
+    margin-top: 228px;
+  }
+  .mt-xl-222px {
+    margin-top: 222px;
+  }
+  .fs-12px {
+    font-size: 24px !important;
+  }
+  .fs-22px {
+    font-size: 44px !important;
+  }
+  .fs-32px {
+    font-size: 64px !important;
+  }
+  .fs-80px {
+    font-size: 160px !important;
+  }
+  .fs-1 {
+    font-size: calc(1.5 * (1.375rem + 1.5vw)) !important;
+  }
+  .fs-4 {
+    font-size: calc(2 * (1.275rem + 0.3vw)) !important;
+  }
+  .btn-login-cjc {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 3rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+  .container {
+    max-width: 85vw;
+  }
+  .card {
+    min-height: 600px !important;
+  }
+  .card .card-body .card-title {
+    font-size: 2rem;
+  }
+  .card .card-body .card-text {
+    font-size: 1.5rem;
+  }
+  .card .img-frame {
+    height: 400px;
+  }
+  .modal#login .modal-dialog {
+    width: 2280px;
+  }
+  .modal#login .modal-dialog .modal-body .form-login input {
+    width: 100%;
+    height: 96px;
+  }
+  .navbar .navbar-brand img {
+    width: 80px;
+  }
+  .navbar .btn-search {
+    font-size: 2rem;
+  }
+  .navbar .navbar-form-control {
+    width: 250px !important;
+    font-size: 2rem;
+  }
+  .navbar .navbar-btn-login img {
+    width: 1.5rem;
+  }
+  .page-body .stage {
+    width: 184px;
+  }
+  .page-body .stage .stage-top {
+    line-height: 40px;
+    height: 160px !important;
+  }
+  .page-body .stage .stage-top .icon {
+    font-size: 46px;
+  }
+  .page-body .stage .stage-top p {
+    font-size: 32px;
+  }
+  .page-body .stage .stage-body .nav .nav-item .circle-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .page-body .stage .stage-body .nav .nav-item .nav-link {
+    font-size: 22px;
+  }
+  .page-body .stage .stage-body .nav .nav-item .dash {
+    border: 2px rgb(53, 61, 105);
+    border-style: dashed;
+    height: calc((100vh - 80px - 145px) / 7);
+  }
+  .page-body .stage .stage-body .nav .nav-item.active .circle-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FFF51D;
+  }
+  .page-body .stage .stage-body .nav .nav-item.done .dash {
+    border-style: solid;
+  }
+  .page-body .sidebar-right {
+    width: 184px;
+    height: 100%;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link {
+    font-size: 56px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help {
+    border: 4px solid #5E6BE1;
+    font-size: 40px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content {
+    width: 800px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .sidebar-content-body {
+    line-height: 55px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container {
+    height: 90vh;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item .message img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item .message p {
+    font-size: 28px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .nav-link.active {
+    color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .sidebar-content {
+    display: none;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .nav-link:not(active) {
+    color: #D9D9D9;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open {
+    background-color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open .nav-link.active {
+    color: white;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open .sidebar-content {
+    display: block;
+  }
+  .page-body .main {
+    max-width: calc(100% - 184px - 184px);
+  }
+  .page-body .main .main-stage-top {
+    font-size: 42px;
+  }
+  .page-body .main .main-stage-top .icon-back {
+    font-size: 70px;
+  }
+  .page-body .main .main-stage-top .number-of-stage {
+    font-weight: 500;
+    padding-left: 70px;
+  }
+  .page-body .main .main-stage-top .number-of-question {
+    font-weight: 500;
+  }
+  .page-body .main .main-stage-body {
+    padding-left: 76px;
+  }
+  .page-body .main .main-stage-body .main-stage-question .question-item .question {
+    font-size: 44px;
+  }
+  .page-body .main .main-stage-body .main-stage-question .question-item .answer {
+    margin-left: 50px;
+  }
+  .page-body .main .main-stage-body .main-stage-question .question-item .answer .form-check .form-check-label {
+    font-weight: 600;
+  }
+  .page-body .main .main-stage-body .main-stage-question .question-item .answer .answer-list {
+    width: 70%;
+  }
+  .page-body .main .main-stage-body .main-stage-question .btn-question-done {
+    font-size: 44px;
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+  .page-body .main-t-and-c .main-t-and-c-top .title {
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .page-body .main-t-and-c .main-t-and-c-top a {
+    font-size: 48px;
+    border: 6px solid #5E6BE1;
+    border-radius: 60px;
+    padding: 3px 10px;
+  }
+  .page-body .main-t-and-c .main-t-and-c-carousel .owl-carousel .item .row {
+    height: 920px;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content {
+    width: 300px;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon {
+    margin-right: 20px;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon .number {
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon .pin {
+    width: 84px;
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon .check {
+    width: 96px;
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon .circle {
+    width: 84px;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .icon .pin-icon .number {
+    display: block;
+  }
+  .page-body#map-journey .map-journey-content .item .item-content .tagline {
+    font-size: 44px;
+  }
+  .page-body#map-journey .map-journey-content .item.active .item-content .icon .pin-icon .pin {
+    display: block;
+  }
+  .page-body#map-journey .map-journey-content .item.active .item-content .icon .pin-icon .circle {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item.active .item-content .icon .pin-icon .check {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item.active .item-content .icon .pin-icon .number {
+    display: block;
+  }
+  .page-body#map-journey .map-journey-content .item.done .item-content .icon .pin-icon .pin {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item.done .item-content .icon .pin-icon .circle {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item.done .item-content .icon .pin-icon .check {
+    display: block;
+  }
+  .page-body#map-journey .map-journey-content .item.done .item-content .icon .pin-icon .number {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item.done .item-content .begin-here {
+    display: none;
+  }
+  .page-body#map-journey .map-journey-content .item:not(.active) .item-content .tagline {
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .page-body#map-journey .map-journey-content .item.item-1 {
+    top: 5vh;
+    left: 15vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-2 {
+    top: 5vh;
+    left: 48vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-3 {
+    top: 5vh;
+    left: 80vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-4 {
+    top: 35vh;
+    left: 70vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-5 {
+    top: 35vh;
+    left: 30vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-6 {
+    top: 53vh;
+    left: 4vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-7 {
+    top: 68vh;
+    left: 40vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-8 {
+    top: 68vh;
+    left: 80vw;
   }
 }
 
