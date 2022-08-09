@@ -1,5 +1,8 @@
   AOS.init();
   $(document).ready(function(){
+    $("#sidebar-right-button").on('click',function(){
+      $(".sidebar-right").toggle();
+    })
 
     var accItem = $('.sidebar-right .nav-item');
     var accHD = $("[data-toggle=sidebar-right].active");
@@ -15,6 +18,7 @@
         accItem[i].className = 'nav-item close';
       }
       if (itemClass == 'nav-item close') {
+        $(".sidebar-right").css("display",'block')
         $(target).parent().addClass('nav-item open');
       }
 
@@ -56,6 +60,8 @@
     })
 
     myModal.show()
+
+
   });
 
 
