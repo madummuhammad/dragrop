@@ -8,6 +8,10 @@ $brightyellow:#FFF51D;
 	font-family: 'Work Sans', sans-serif;
 }
 
+body{
+	max-width: 2400px !important;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -17,8 +21,7 @@ $brightyellow:#FFF51D;
 
 .navbar-sticky{
 	position:fixed;
-	left: 0;
-	right: 0;
+	width: 100vw !important;
 	top: 0;
 	z-index: 2;
 }
@@ -1446,6 +1449,10 @@ $brightyellow:#FFF51D;
 		font-size: 2rem;
 		// font-weight: 800;
 		// line-height: 3;
+	}
+
+	.navbar-sticky{
+		width: 2400px !important;
 	}
 
 	.mt-lg-216px{

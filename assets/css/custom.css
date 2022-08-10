@@ -3,6 +3,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  max-width: 2400px !important;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -13,8 +17,7 @@
 
 .navbar-sticky {
   position: fixed;
-  left: 0;
-  right: 0;
+  width: 100vw !important;
   top: 0;
   z-index: 2;
 }
@@ -999,6 +1002,9 @@
   body {
     margin: 0;
     font-size: 2rem;
+  }
+  .navbar-sticky {
+    width: 2400px !important;
   }
   .mt-lg-216px {
     margin-top: 216px;
