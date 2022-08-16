@@ -999,6 +999,9 @@
   #login_3 .navbar-sticky {
     width: 2560px !important;
   }
+  #login_3 .page-body {
+    min-height: 1440px !important;
+  }
 }
 @media (min-width: 2400px) {
   :root {
@@ -1008,6 +1011,9 @@
     margin: 0;
     font-size: 2rem;
     width: 2400px;
+  }
+  #login_2 .page-body {
+    min-height: 1600px !important;
   }
   .navbar-sticky {
     width: 2400px;
