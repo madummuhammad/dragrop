@@ -3,10 +3,6 @@
   font-family: "Work Sans", sans-serif;
 }
 
-body {
-  max-width: 2400px !important;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -17,7 +13,7 @@ body {
 
 .navbar-sticky {
   position: fixed;
-  width: 100vw !important;
+  width: 100vw;
   top: 0;
   z-index: 2;
 }
@@ -99,6 +95,7 @@ body {
 
 .page-body {
   position: relative;
+  min-height: 100vh;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -995,6 +992,14 @@ body {
     height: 65vh;
   }
 }
+@media (min-width: 2560px) {
+  #login_3 {
+    width: 2560px !important;
+  }
+  #login_3 .navbar-sticky {
+    width: 2560px !important;
+  }
+}
 @media (min-width: 2400px) {
   :root {
     font-size: 20px;
@@ -1002,9 +1007,10 @@ body {
   body {
     margin: 0;
     font-size: 2rem;
+    width: 2400px;
   }
   .navbar-sticky {
-    width: 2400px !important;
+    width: 2400px;
   }
   .mt-lg-216px {
     margin-top: 216px;
