@@ -87,16 +87,37 @@ body {
 	}
 }
 
-.popover {
+// .container-popover {
+// 	position: relative;
+
+// 	.answer-popover {
+// 		position: absolute;
+// 		transform: translate3d(100px, 0, 0px);
+// 		inset: 0px 0px auto auto;
+// 		left: 0;
+// 		width: 150px;
+// 	}
+// }
+
+.answer-popover {
+	width: 150px;
 	position: absolute;
-	// top: 0;
-	// left: 0;
+	left: -20px;
+	top: -20px;
 	border: 2px solid $purplehue1;
 	border-radius: 8px;
 	font-size: 20px;
-	width: 10vw;
-	// display: none;
-	z-index: 1;
+	background-color: white;
+}
+
+.answer-popover::after {
+	position: absolute;
+	content: url("../img/icon/triangle.svg");
+	;
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 100%;
 }
 
 

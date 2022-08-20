@@ -8,14 +8,24 @@ $(document).ready(function () {
   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl)
   });
-  $('[data-bs-toggle="popover"]').popover({
-    template: '<div class="popover"><div class="popover-arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-footer"><a class="btn btn-secondary btn-sm close">Close</a></div></div>'
+  var top = $("#coba").offset().top;
+  var left = $("#coba").offset().left;
+  $(".answer-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
+
+  $(".main-stage-question").on('scroll', function () {
+    var top = $("#coba").offset().top;
+    var left = $("#coba").offset().left;
+    $(".answer-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
+  })
+
+  $("[data-bs-toggle=custom-popover]").on('mouseover', function () {
+    $(".answer-popover").show();
   });
 
-  // Close popover on button click
-  $(document).on("click", ".popover .close", function () {
-    $(this).parents(".popover").popover("hide");
+  $("[data-bs-toggle=custom-popover]").on('mouseout', function () {
+    $(".answer-popover").hide();
   });
+
 
   $(".document-preview").on('click', function () {
     $("#item-document-1").toggle();

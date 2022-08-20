@@ -292,13 +292,24 @@
                                     <div class="mt-4 mb-2">
                                         <div class="form-check form-check-inline text-grayblue container-popover">
                                             <div class="">
-                                                <input class="answer-radio" data-bs-toggle="popover"
-                                                    data-bs-trigger="hover focus" data-bs-placement="left"
-                                                    data-bs-content="asdfsadvf asdfsa fs dfsadf  dsaf dsa f dsa f dsa fdsa f sa d fdsafdsaf"
+                                                <input class="answer-radio" data-bs-toggle="custom-popover" id="coba"
                                                     type="radio" id="inlineCheckbox1" value="option1" name="option1"
                                                     data-bs-html="true">
                                                 <label class="form-check-label" for="inlineCheckbox1">Yes</label>
                                             </div>
+                                            <!-- <div class="answer-popover">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <input type="checkbox" class="form-check-input ms-2">
+                                                    </div>
+                                                    <div class="col-9 ps-3">
+                                                        Keep track
+                                                        of your tasks!<br>
+                                                        <button
+                                                            class="btn btn-outline-purplehue2 text-grayblue bg-brightyellow">OK!</button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
                                         </div>
                                         <!-- <div class="row">
                                             <div class="col-2">
@@ -504,6 +515,18 @@
         <div class="sidebar-right-button">
             <button id="sidebar-right-button" class="btn btn-primary text-white"><i
                     class="fa-solid fa-angle-left"></i></button>
+        </div>
+        <div class="answer-popover" style="display: none">
+            <div class="row py-1">
+                <div class="col-3">
+                    <input type="checkbox" class="form-check-input ms-2">
+                </div>
+                <div class="col-9">
+                    Keep track
+                    of your tasks!<br>
+                    <button class="btn btn-outline-purplehue2 text-grayblue bg-brightyellow">OK!</button>
+                </div>
+            </div>
         </div>
     </body>
     <script src="assets/plugins/aos/aos.js"></script>

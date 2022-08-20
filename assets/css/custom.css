@@ -71,13 +71,24 @@
   background-color: transparent;
 }
 
-.popover {
+.answer-popover {
+  width: 150px;
   position: absolute;
+  left: -20px;
+  top: -20px;
   border: 2px solid #5E6BE1;
   border-radius: 8px;
   font-size: 20px;
-  width: 10vw;
-  z-index: 1;
+  background-color: white;
+}
+
+.answer-popover::after {
+  position: absolute;
+  content: url("../img/icon/triangle.svg");
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 100%;
 }
 
 .sidebar-right-button {
