@@ -1,68 +1,89 @@
-  AOS.init();
-  $(document).ready(function(){
-    $("#sidebar-right-button").on('click',function(){
-      $(".sidebar-right").toggle();
-    })
+AOS.init();
+$(document).ready(function () {
+  $("#sidebar-right-button").on('click', function () {
+    $(".sidebar-right").toggle();
+  })
 
-    var accItem = $('.sidebar-right .nav-item');
-    var accHD = $("[data-toggle=sidebar-right].active");
-
-    for (i = 0; i < accHD.length; i++) {
-      accHD[i].addEventListener('click', toggleItem, false);
-    }
-
-    function toggleItem() {
-      var target = $(this).data('target');
-      var itemClass = $(target).parent().attr('class');
-      for (i = 0; i < accItem.length; i++) {
-        accItem[i].className = 'nav-item close';
-      }
-      if (itemClass == 'nav-item close') {
-        $(".sidebar-right").css("display",'block')
-        $(target).parent().addClass('nav-item open');
-      }
-
-    }
-
-
-    var accItem2 = $('.sidebar-right .nav-item');
-    var accHD2 = $("[data-toggle=sidebar-right]:not(.active)");
-
-    for (i = 0; i < accHD2.length; i++) {
-      accHD2[i].addEventListener('click', toggleItem2, false);
-    }
-
-    function toggleItem2() {
-      $(".disclaimer-for-help").toggle();
-
-    }
-
-    $('.owl-carousel').owlCarousel({
-      autoWidth:true,
-      loop:false,
-      margin:10,
-      nav:false,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:2
-        },
-        1000:{
-          items:2
-        }
-      }
-    })
-
-    var myModal = new bootstrap.Modal(document.getElementById('login'), {
-      keyboard: false
-    })
-
-    myModal.show()
-
-
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
   });
+  $('[data-bs-toggle="popover"]').popover({
+    template: '<div class="popover"><div class="popover-arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div><div class="popover-footer"><a class="btn btn-secondary btn-sm close">Close</a></div></div>'
+  });
+
+  // Close popover on button click
+  $(document).on("click", ".popover .close", function () {
+    $(this).parents(".popover").popover("hide");
+  });
+
+  $(".document-preview").on('click', function () {
+    $("#item-document-1").toggle();
+  })
+
+
+
+  var accItem = $('.sidebar-right .nav-item');
+  var accHD = $("[data-toggle=sidebar-right].active");
+
+  for (i = 0; i < accHD.length; i++) {
+    accHD[i].addEventListener('click', toggleItem, false);
+  }
+
+  function toggleItem() {
+    var target = $(this).data('target');
+    var itemClass = $(target).parent().attr('class');
+    for (i = 0; i < accItem.length; i++) {
+      accItem[i].className = 'nav-item close';
+    }
+    if (itemClass == 'nav-item close') {
+      $(".sidebar-right").css("display", 'block')
+      $(target).parent().addClass('nav-item open');
+    }
+
+  }
+
+
+  var accItem2 = $('.sidebar-right .nav-item');
+  var accHD2 = $("[data-toggle=sidebar-right]:not(.active)");
+
+  for (i = 0; i < accHD2.length; i++) {
+    accHD2[i].addEventListener('click', toggleItem2, false);
+  }
+
+  function toggleItem2() {
+    $(".disclaimer-for-help").toggle();
+
+  }
+
+  $('.owl-carousel').owlCarousel({
+    autoWidth: true,
+    loop: false,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 2
+      }
+    }
+  })
+
+  var myModal = new bootstrap.Modal(document.getElementById('login'), {
+    keyboard: false
+  })
+
+  myModal.show()
+
+
+
+
+});
 
 
 

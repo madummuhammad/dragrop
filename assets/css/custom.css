@@ -11,6 +11,29 @@
   color: white;
 }
 
+.form-check-input[type=checkbox] {
+  width: 1.3em;
+  height: 1.3em;
+  margin-top: 0.25em;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  appearance: none;
+  color-adjust: exact;
+  border: 2px solid #414977;
+}
+
+.form-check-input:focus[type=checkbox] {
+  box-shadow: none;
+}
+
+.form-check-input:checked[type=checkbox] {
+  background-image: url("data: image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' %3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6' /%3e%3c/svg%3e");
+}
+
 .navbar-sticky {
   position: fixed;
   width: 100vw;
@@ -40,6 +63,21 @@
 
 .btn-outline-brightyellow:hover {
   color: white !important;
+}
+
+.btn-outline-white {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.popover {
+  position: absolute;
+  border: 2px solid #5E6BE1;
+  border-radius: 8px;
+  font-size: 20px;
+  width: 10vw;
+  z-index: 1;
 }
 
 .sidebar-right-button {
@@ -242,6 +280,42 @@
 }
 .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .sidebar-content-body .item .description {
   margin: 0px;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document {
+  position: absolute;
+  right: 100%;
+  height: 100%;
+  width: 630px;
+  bottom: 0;
+  background-color: white;
+  padding: 20px 20px;
+  color: #5E6BE1;
+  display: none;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-header .close-header a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border {
+  color: black;
+  border: 3px solid #5E6BE1 !important;
+  border-radius: 20px;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box {
+  position: relative;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box .letter-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 99%;
+  width: 200px;
+}
+.page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box .letter-content p {
+  margin-top: -8px;
+  color: #5E6BE1;
 }
 .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container {
   height: 90vh;
