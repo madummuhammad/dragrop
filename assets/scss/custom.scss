@@ -98,16 +98,22 @@ body {
 // 		width: 150px;
 // 	}
 // }
-
-.answer-popover {
-	width: 150px;
+.container-popover {
 	position: absolute;
-	left: -20px;
+	left: -30px;
 	top: -20px;
-	border: 2px solid $purplehue1;
-	border-radius: 8px;
-	font-size: 20px;
-	background-color: white;
+	width: 180px;
+	padding: 10px;
+	height: 50%;
+
+	.answer-popover {
+		position: absolute;
+		width: 150px;
+		border: 2px solid $purplehue1;
+		border-radius: 8px;
+		font-size: 20px;
+		background-color: white;
+	}
 }
 
 .answer-popover::after {

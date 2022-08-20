@@ -71,11 +71,17 @@
   background-color: transparent;
 }
 
-.answer-popover {
-  width: 150px;
+.container-popover {
   position: absolute;
-  left: -20px;
+  left: -30px;
   top: -20px;
+  width: 180px;
+  padding: 10px;
+  height: 50%;
+}
+.container-popover .answer-popover {
+  position: absolute;
+  width: 150px;
   border: 2px solid #5E6BE1;
   border-radius: 8px;
   font-size: 20px;
