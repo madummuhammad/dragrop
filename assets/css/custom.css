@@ -3,6 +3,10 @@
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  background-color: #FFFFF0;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
