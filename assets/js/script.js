@@ -8,6 +8,25 @@ $(document).ready(function () {
   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl)
   });
+
+    $('.owl-carousel').owlCarousel({
+    autoWidth: true,
+    loop: false,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 2
+      }
+    }
+  })
+
   var top = $("#coba").offset().top;
   var left = $("#coba").offset().left;
   $(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
@@ -17,7 +36,6 @@ $(document).ready(function () {
     var left = $("#coba").offset().left;
     $(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
   });
-
   $("[data-bs-toggle=custom-popover]").on('mouseover', function () {
     $(".container-popover").show();
   });
@@ -79,23 +97,7 @@ $(document).ready(function () {
 
   }
 
-  $('.owl-carousel').owlCarousel({
-    autoWidth: true,
-    loop: false,
-    margin: 10,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 2
-      }
-    }
-  })
+
 
   var myModal = new bootstrap.Modal(document.getElementById('login'), {
     keyboard: false
