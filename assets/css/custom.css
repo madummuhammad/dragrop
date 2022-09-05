@@ -179,6 +179,7 @@ body {
   width: 100%;
 }
 .page-body .stage {
+  position: relative;
   top: 0;
   bottom: 0;
   left: 0;
@@ -186,6 +187,7 @@ body {
   -webkit-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+  position: relative;
 }
 .page-body .stage .stage-top {
   margin-top: 10px;
@@ -202,6 +204,9 @@ body {
 }
 .page-body .stage .stage-top p {
   font-size: 16px;
+}
+.page-body .stage .stage-body {
+  position: relative;
 }
 .page-body .stage .stage-body .nav .nav-item {
   padding-top: 10px;
@@ -224,7 +229,7 @@ body {
 .page-body .stage .stage-body .nav .nav-item .dash {
   border: 1px rgb(53, 61, 105);
   border-style: dashed;
-  height: calc((100vh - 80px - 145px) / 7);
+  height: 70px;
 }
 .page-body .stage .stage-body .nav .nav-item.active .circle-icon {
   width: 20px;
@@ -674,36 +679,36 @@ body {
   text-decoration: none;
 }
 .page-body .map-journey-content .item.item-1 {
-  top: 5vh;
-  left: 15vw;
+  top: 30px;
+  left: 200px;
 }
 .page-body .map-journey-content .item.item-2 {
-  top: 5vh;
-  left: 48vw;
+  top: 30px;
+  left: 650px;
 }
 .page-body .map-journey-content .item.item-3 {
-  top: 5vh;
-  left: 80vw;
+  top: 30px;
+  left: 1100px;
 }
 .page-body .map-journey-content .item.item-4 {
-  top: 35vh;
-  left: 70vw;
+  top: 220px;
+  left: 950px;
 }
 .page-body .map-journey-content .item.item-5 {
-  top: 35vh;
-  left: 30vw;
+  top: 220px;
+  left: 450px;
 }
 .page-body .map-journey-content .item.item-6 {
-  top: 53vh;
-  left: 4vw;
+  top: 350px;
+  left: 20px;
 }
 .page-body .map-journey-content .item.item-7 {
-  top: 68vh;
-  left: 40vw;
+  top: 450px;
+  left: 550px;
 }
 .page-body .map-journey-content .item.item-8 {
-  top: 68vh;
-  left: 80vw;
+  top: 450px;
+  left: 1070px;
 }
 .page-body .main-login {
   width: 100%;
@@ -1071,6 +1076,10 @@ body {
     position: absolute;
     top: 28%;
   }
+  .page-body .stage .stage-top {
+    position: absolute;
+    bottom: 0;
+  }
   .page-body#map-journey .map-journey-content .item.item-1 {
     top: 5vh;
     left: 14vw;
@@ -1208,6 +1217,8 @@ body {
   .page-body .stage .stage-top {
     line-height: 40px;
     height: 160px !important;
+    position: absolute;
+    bottom: 0;
   }
   .page-body .stage .stage-top .icon {
     font-size: 46px;
@@ -1225,7 +1236,7 @@ body {
   .page-body .stage .stage-body .nav .nav-item .dash {
     border: 2px rgb(53, 61, 105);
     border-style: dashed;
-    height: calc((100vh - 80px - 145px) / 7);
+    height: 110px;
   }
   .page-body .stage .stage-body .nav .nav-item.active .circle-icon {
     width: 40px;
@@ -1395,36 +1406,36 @@ body {
     text-decoration: none;
   }
   .page-body#map-journey .map-journey-content .item.item-1 {
-    top: 5vh;
-    left: 15vw;
+    top: 30px;
+    left: 310px;
   }
   .page-body#map-journey .map-journey-content .item.item-2 {
-    top: 5vh;
-    left: 48vw;
+    top: 30px;
+    left: 1150px;
   }
   .page-body#map-journey .map-journey-content .item.item-3 {
-    top: 5vh;
-    left: 80vw;
+    top: 30px;
+    left: 1900px;
   }
   .page-body#map-journey .map-journey-content .item.item-4 {
-    top: 35vh;
-    left: 70vw;
+    top: 380px;
+    left: 1750px;
   }
   .page-body#map-journey .map-journey-content .item.item-5 {
-    top: 35vh;
-    left: 30vw;
+    top: 380px;
+    left: 760px;
   }
   .page-body#map-journey .map-journey-content .item.item-6 {
-    top: 53vh;
-    left: 4vw;
+    top: 580px;
+    left: 20px;
   }
   .page-body#map-journey .map-journey-content .item.item-7 {
-    top: 68vh;
-    left: 40vw;
+    top: 790px;
+    left: 990px;
   }
   .page-body#map-journey .map-journey-content .item.item-8 {
-    top: 68vh;
-    left: 80vw;
+    top: 790px;
+    left: 1900px;
   }
 }
 

@@ -227,7 +227,7 @@ body {
 	width: 100%;
 
 	.stage {
-		// position:relative;
+		position: relative;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -235,6 +235,7 @@ body {
 		-webkit-transition: all 0.25s ease-out;
 		-o-transition: all 0.25s ease-out;
 		transition: all 0.25s ease-out;
+		position: relative;
 
 		.stage-top {
 			margin-top: 10px;
@@ -256,6 +257,8 @@ body {
 		}
 
 		.stage-body {
+			position: relative;
+
 			.nav {
 				.nav-item {
 					padding-top: 10px;
@@ -280,7 +283,8 @@ body {
 					.dash {
 						border: 1px rgba(53, 61, 105, 1);
 						border-style: dashed;
-						height: calc(calc(100vh - 80px - 145px) / 7);
+						// height: calc(calc(100vh - 80px - 145px) / 7);
+						height: 70px;
 					}
 				}
 
@@ -890,57 +894,57 @@ body {
 		.item.item-1 {
 			// top: 60px;
 			// left: 200px;
-			top: 5vh;
-			left: 15vw;
+			top: 30px;
+			left: 200px;
 		}
 
 		.item.item-2 {
 			// top: 60px;
 			// left: 650px;
-			top: 5vh;
-			left: 48vw;
+			top: 30px;
+			left: 650px;
 		}
 
 		.item.item-3 {
 			// top: 60px;
 			// left: 1100px;
-			top: 5vh;
-			left: 80vw;
+			top: 30px;
+			left: 1100px;
 		}
 
 		.item.item-4 {
 			// top: 260px;
 			// left: 940px;
-			top: 35vh;
-			left: 70vw
+			top: 220px;
+			left: 950px
 		}
 
 		.item.item-5 {
 			// top: 260px;
 			// left: 460px;
-			top: 35vh;
-			left: 30vw;
+			top: 220px;
+			left: 450px;
 		}
 
 		.item.item-6 {
 			// top: 400px;
 			// left:50px;
-			top: 53vh;
-			left: 4vw;
+			top: 350px;
+			left: 20px;
 		}
 
 		.item.item-7 {
 			// top: 480px;
 			// left: 550px;
-			top: 68vh;
-			left: 40vw;
+			top: 450px;
+			left: 550px;
 		}
 
 		.item.item-8 {
 			// top: 480px;
 			// left: 1040px;
-			top: 68vh;
-			left: 80vw;
+			top: 450px;
+			left: 1070px;
 		}
 	}
 
@@ -1606,6 +1610,13 @@ body {
 
 			}
 		}
+
+		.stage {
+			.stage-top {
+				position: absolute;
+				bottom: 0;
+			}
+		}
 	}
 
 	.page-body#map-journey {
@@ -1669,6 +1680,7 @@ body {
 }
 
 @media (min-width: 2560px) {
+
 	#login_3 {
 		width: 2560px !important;
 
@@ -1823,6 +1835,8 @@ body {
 			.stage-top {
 				line-height: 40px;
 				height: 160px !important;
+				position: absolute;
+				bottom: 0;
 
 				.icon {
 					font-size: 46px;
@@ -1848,7 +1862,8 @@ body {
 						.dash {
 							border: 2px rgba(53, 61, 105, 1);
 							border-style: dashed;
-							height: calc(calc(100vh - 80px - 145px) / 7);
+							height: 110px;
+							// height: calc(calc(100vh - 80px - 145px) / 7);
 						}
 					}
 
@@ -2144,57 +2159,57 @@ body {
 			.item.item-1 {
 				// top: 60px;
 				// left: 200px;
-				top: 5vh;
-				left: 15vw;
+				top: 30px;
+				left: 310px;
 			}
 
 			.item.item-2 {
 				// top: 60px;
 				// left: 650px;
-				top: 5vh;
-				left: 48vw;
+				top: 30px;
+				left: 1150px;
 			}
 
 			.item.item-3 {
 				// top: 60px;
 				// left: 1100px;
-				top: 5vh;
-				left: 80vw;
+				top: 30px;
+				left: 1900px;
 			}
 
 			.item.item-4 {
 				// top: 260px;
 				// left: 940px;
-				top: 35vh;
-				left: 70vw
+				top: 380px;
+				left: 1750px
 			}
 
 			.item.item-5 {
 				// top: 260px;
 				// left: 460px;
-				top: 35vh;
-				left: 30vw;
+				top: 380px;
+				left: 760px;
 			}
 
 			.item.item-6 {
 				// top: 400px;
 				// left:50px;
-				top: 53vh;
-				left: 4vw;
+				top: 580px;
+				left: 20px;
 			}
 
 			.item.item-7 {
 				// top: 480px;
 				// left: 550px;
-				top: 68vh;
-				left: 40vw;
+				top: 790px;
+				left: 990px;
 			}
 
 			.item.item-8 {
 				// top: 480px;
 				// left: 1040px;
-				top: 68vh;
-				left: 80vw;
+				top: 790px;
+				left: 1900px;
 			}
 		}
 	}
