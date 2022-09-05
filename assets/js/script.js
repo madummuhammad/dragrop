@@ -9,7 +9,7 @@ $(document).ready(function () {
     return new bootstrap.Popover(popoverTriggerEl)
   });
 
-    $('.owl-carousel').owlCarousel({
+  $('.owl-carousel').owlCarousel({
     autoWidth: true,
     loop: false,
     margin: 10,
@@ -25,37 +25,11 @@ $(document).ready(function () {
         items: 2
       }
     }
-  })
-
-  var top = $("#coba").offset().top;
-  var left = $("#coba").offset().left;
-  $(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
-
-  $(".main-stage-question").on('scroll', function () {
-    var top = $("#coba").offset().top;
-    var left = $("#coba").offset().left;
-    $(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
-  });
-  $("[data-bs-toggle=custom-popover]").on('mouseover', function () {
-    $(".container-popover").show();
-  });
-
-  $("[data-bs-toggle=custom-popover]").on('mouseout', function () {
-    $(".container-popover").hide();
-  });
-
-  $(".container-popover").on('mouseover', function () {
-    $(".container-popover").show();
-  });
-
-  $(".container-popover").on('mouseout', function () {
-    $(".container-popover").hide();
   });
 
 
-  $(document).on('click', function () {
-    // $(".container-popover").hide();
-  })
+
+
 
 
   $(".document-preview").on('click', function () {
@@ -108,6 +82,31 @@ $(document).ready(function () {
 
 
 
+});
+
+var top = $("#coba").offset().top;
+var left = $("#coba").offset().left;
+$(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
+
+$(".main-stage-question").on('scroll', function () {
+  var top = $("#coba").offset().top;
+  var left = $("#coba").offset().left;
+  $(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
+});
+$("[data-bs-toggle=custom-popover]").on('mouseover', function () {
+  $(".container-popover").show();
+});
+
+$("[data-bs-toggle=custom-popover]").on('mouseout', function () {
+  $(".container-popover").hide();
+});
+
+$(".container-popover").on('mouseover', function () {
+  $(".container-popover").show();
+});
+
+$(".container-popover").on('mouseout', function () {
+  $(".container-popover").hide();
 });
 
 

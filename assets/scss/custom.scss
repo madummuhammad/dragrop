@@ -11,7 +11,6 @@ $brightyellow: #FFF51D;
 body {
 	// max-width: 2400px;
 	background-color: #FFFFF0
-
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +21,7 @@ body {
 	color: white;
 }
 
-.login-dash{
+.login-dash {
 	border-bottom: 1px solid #353D69;
 	opacity: 0.3;
 	width: 100%;
@@ -1450,9 +1449,10 @@ body {
 		width: 100% !important;
 	}
 
-	.text-start-mobile{
+	.text-start-mobile {
 		text-align: left !important;
 	}
+
 	.page-body#map-journey {
 		.map-journey-content {
 			.item.item-1 {
