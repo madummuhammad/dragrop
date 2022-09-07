@@ -1,8 +1,29 @@
 AOS.init();
 $(document).ready(function () {
+
+  function toggleSidebarRight() {
+    if ($(".sidebar-right").hasClass('active')) {
+      $(".sidebar-right").removeClass('active')
+    } else {
+      $(".sidebar-right").addClass('active')
+    }
+  }
   $("#sidebar-right-button").on('click', function () {
-    $(".sidebar-right").toggle();
-  })
+    toggleSidebarRight();
+  });
+
+  if (screen.width <= 576) {
+    var navbar_sticky = $(".navbar-sticky").height();
+    var sidebar_right = $(".sidebar-right").height();
+    $(".sidebar-right .sidebar-content").css('height', 'calc(100vh - ' + navbar_sticky + 'px - ' + sidebar_right + 'px)');
+    $(".sidebar-right .sidebar-content .item-document").css('height', 'calc(100vh - ' + navbar_sticky + 'px - ' + sidebar_right + 'px)');
+
+    var sidebar_content = $(".sidebar-right .sidebar-content").height();
+    $(".chat-container").css('height', 'calc(' + sidebar_content + 'px - ' + sidebar_right + 'px)')
+  }
+
+
+
 
   var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
   var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {

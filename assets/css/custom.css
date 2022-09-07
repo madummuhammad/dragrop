@@ -256,7 +256,6 @@ body {
 .page-body .sidebar-right {
   position: absolute;
   display: flex;
-  top: 0;
   right: 0;
   width: 92px;
   height: 100%;
@@ -269,6 +268,9 @@ body {
 }
 .page-body .sidebar-right .sidebar-body {
   width: 100%;
+}
+.page-body .sidebar-right .sidebar-body .nav .all-stage {
+  display: none;
 }
 .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link {
   font-size: 28px;
@@ -808,14 +810,171 @@ body {
   .page-body .stage .stage-top p {
     font-size: 16px;
   }
+  .page-body .sidebar-right.active {
+    left: 0;
+  }
   .page-body .sidebar-right {
-    display: none;
+    position: fixed;
+    display: flex;
+    left: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 92px;
+    transition: 1s;
+  }
+  .page-body .sidebar-right .sidebar-body {
+    width: 100%;
+  }
+  .page-body .sidebar-right .sidebar-body .nav {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .all-stage {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(53, 61, 105);
+    background-color: #5E6BE1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .all-stage a {
+    color: rgb(53, 61, 105);
+  }
+  .page-body .sidebar-right .sidebar-body .nav li {
+    width: 20%;
   }
   .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help {
+    position: absolute;
+    right: 0;
+    top: -110%;
+    border: 2px solid #5E6BE1;
+    border-radius: 8px;
+    font-size: 20px;
     width: 50vw;
+    display: none;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help::after {
+    position: absolute;
+    content: url("../img/icon/triangle.svg");
+    display: block;
+    position: absolute;
+    top: 86%;
+    left: 80%;
+    rotate: 90deg;
   }
   .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content {
-    width: 80vw;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    bottom: 100%;
+    background-color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .sidebar-content-body {
+    overflow: scroll;
+    line-height: 25px;
+    max-height: 90vh;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .sidebar-content-body .item .word p {
+    margin: 0px;
+    text-decoration: underline;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .sidebar-content-body .item .description {
+    margin: 0px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: white;
+    padding: 20px 20px;
+    color: #5E6BE1;
+    display: none;
+    overflow: scroll;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-header .close-header a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-header p {
+    font-size: 14px !important;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border {
+    color: black;
+    border: 3px solid #5E6BE1 !important;
+    border-radius: 20px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box {
+    position: relative;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box .letter-content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 99%;
+    width: 200px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .item-document .item-document-content .row .border .letter-box .letter-content p {
+    margin-top: -8px;
+    color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-chat {
+    background-color: #F0F0F0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 12vh;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-chat textarea {
+    width: 100%;
+    border: none;
+    background-color: white;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message {
+    position: absolute;
+    bottom: 12vh;
+    padding: 20px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item {
+    position: relative;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item .message {
+    display: flex;
+    color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item .message img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content .chat-container .form-message .message-item .message p {
+    font-size: 14px;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .nav-link.active {
+    color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .sidebar-content {
+    display: none;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.close .nav-link:not(active) {
+    color: #D9D9D9;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open {
+    background-color: #5E6BE1;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open .nav-link.active {
+    color: white;
+  }
+  .page-body .sidebar-right .sidebar-body .nav .nav-item.open .sidebar-content {
+    display: block;
   }
   .page-body .main-login .img-login .stick-left {
     position: absolute;
