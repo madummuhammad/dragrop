@@ -1017,6 +1017,18 @@ body {
 @media (max-width: 576px) {
 	.sidebar-right-button {
 		display: block;
+
+		button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			vertical-align: middle;
+
+			.icon {
+				font-size: 16px;
+			}
+		}
 	}
 
 	.container-popover {
