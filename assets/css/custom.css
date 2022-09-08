@@ -119,7 +119,7 @@ body {
   z-index: 2;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 90px;
   display: none;
 }
 .sidebar-right-button button {
@@ -891,7 +891,6 @@ body {
     width: 100%;
     bottom: 0;
     background-color: white;
-    padding: 20px 20px;
     color: #5E6BE1;
     display: none;
     overflow: scroll;
