@@ -756,6 +756,31 @@ body {
   .sidebar-right-button {
     display: block;
   }
+  .container-popover {
+    position: absolute;
+    left: 180px;
+    top: -20px;
+    width: 180px;
+    padding: 10px;
+    height: 50%;
+  }
+  .container-popover .answer-popover {
+    position: absolute;
+    width: 150px;
+    border: 2px solid #5E6BE1;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: white;
+  }
+  .answer-popover::after {
+    position: absolute;
+    content: url("../img/icon/triangle.svg");
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    transform: rotate(180deg);
+  }
   .mt-sm-152px {
     margin-top: 152px !important;
   }
