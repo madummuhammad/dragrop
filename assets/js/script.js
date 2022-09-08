@@ -75,6 +75,7 @@ $(document).ready(function () {
     if (itemClass == 'nav-item close') {
       $(".sidebar-right").css("display", 'block')
       $(target).parent().addClass('nav-item open');
+      toggleSidebarRight();
     }
 
   }
