@@ -3,7 +3,9 @@ $(document).ready(function () {
 
   function toggleSidebarRight() {
     if ($(".sidebar-right").hasClass('active')) {
-      $(".sidebar-right").removeClass('active')
+      $(".sidebar-right").removeClass('active');
+      $(".nav-item").removeClass('open');
+      $(".disclaimer-for-help").css('display', 'none');
     } else {
       $(".sidebar-right").addClass('active')
     }
@@ -75,7 +77,10 @@ $(document).ready(function () {
     if (itemClass == 'nav-item close') {
       $(".sidebar-right").css("display", 'block')
       $(target).parent().addClass('nav-item open');
-      toggleSidebarRight();
+      $(".disclaimer-for-help").css('display', 'none');
+      if (screen.width <= 576) {
+        $(".sidebar-right").addClass('active')
+      }
     }
 
   }
@@ -90,7 +95,7 @@ $(document).ready(function () {
 
   function toggleItem2() {
     $(".disclaimer-for-help").toggle();
-
+    $(".nav-item").removeClass('open');
   }
 
 
