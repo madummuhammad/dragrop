@@ -863,7 +863,7 @@ body {
     position: absolute;
     top: 86%;
     left: 80%;
-    rotate: 90deg;
+    transform: rotate(90deg);
   }
   .page-body .sidebar-right .sidebar-body .nav .nav-item .sidebar-content {
     position: absolute;
