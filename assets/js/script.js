@@ -22,6 +22,7 @@ $(document).ready(function () {
 
     var sidebar_content = $(".sidebar-right .sidebar-content").height();
     $(".chat-container").css('height', 'calc(' + sidebar_content + 'px - ' + sidebar_right + 'px)')
+    $(".sidebar-content-body").css('max-height', 'calc(' + sidebar_content + 'px - ' + sidebar_right + 'px)')
   }
 
 

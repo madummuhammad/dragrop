@@ -1253,13 +1253,14 @@ body {
 							width: 100%;
 							bottom: 100%;
 							background-color: $purplehue1;
+							z-index: -1;
 
 							.sidebar-title {}
 
 							.sidebar-content-body {
 								overflow: scroll;
 								line-height: 25px;
-								max-height: 90vh;
+								// max-height: 60vh;
 
 								.item {
 									.word {
