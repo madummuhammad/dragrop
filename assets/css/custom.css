@@ -116,10 +116,10 @@ body {
 }
 
 .sidebar-right-button {
-  z-index: 2;
+  z-index: 0;
   position: fixed;
   right: 20px;
-  bottom: 90px;
+  bottom: 100px;
   display: none;
 }
 .sidebar-right-button button {
@@ -288,6 +288,7 @@ body {
   font-size: 20px;
   width: 15vw;
   display: none;
+  background-color: white;
 }
 .page-body .sidebar-right .sidebar-body .nav .nav-item .nav-link .disclaimer-for-help::after {
   position: absolute;
@@ -1039,7 +1040,7 @@ body {
     font-size: 24px;
   }
   .page-body .main-login .row div:nth-child(2) a {
-    display: none !important;
+    /* display: none !important; */
   }
   .page-body .main-t-and-c .main-t-and-c-top .title {
     font-size: 18px;
@@ -1169,7 +1170,7 @@ body {
   }
   .page-body#map-journey .map-journey-content .item.item-1 {
     top: 0vh !important;
-    left: 14vw;
+    left: 14px;
   }
   .page-body#map-journey .map-journey-content .item.item-2 {
     top: 0vh !important;
@@ -1180,24 +1181,29 @@ body {
     left: 80vw;
   }
   .page-body#map-journey .map-journey-content .item.item-4 {
-    top: 20vh !important;
+    top: 120px !important;
     left: 67vw;
   }
   .page-body#map-journey .map-journey-content .item.item-5 {
-    top: 20vh !important;
+    top: 120px !important;
     left: 30vw;
   }
   .page-body#map-journey .map-journey-content .item.item-6 {
-    top: 35vh !important;
+    top: 180px !important;
     left: 0vw;
   }
   .page-body#map-journey .map-journey-content .item.item-7 {
-    top: 45vh !important;
+    top: 260px !important;
     left: 40vw;
   }
   .page-body#map-journey .map-journey-content .item.item-8 {
-    top: 45vh !important;
+    top: 260px !important;
     left: 78vw;
+  }
+}
+@media (min-width: 768px) {
+  .page-body .main{
+    width: 78%;
   }
 }
 @media (max-width: 1024px) {
@@ -1311,10 +1317,21 @@ body {
 }
 @media (min-width: 2560px) {
   #login_3 {
+    margin: 0;
     width: 2560px !important;
   }
+
+  #login_3 .page-body .main-login{
+    overflow: hidden;
+  }
   #login_3 .navbar-sticky {
+    margin: 0 !important;
     width: 2560px !important;
+  }
+
+  #login_3 .page-body{
+    width: 2560px !important;
+    /* margin: 0 !important; */
   }
   #login_3 .page-body {
     min-height: 1440px !important;

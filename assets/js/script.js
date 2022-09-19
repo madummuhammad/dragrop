@@ -112,9 +112,9 @@ $(document).ready(function () {
 
 });
 
-var top = $("#coba").offset().top;
-var left = $("#coba").offset().left;
-$(".container-popover").css("transform", "translate3d(calc(" + left + "px - 150px), " + top + "px, 0px)");
+var tops = $("#coba").offset().top;
+var lefts = $("#coba").offset().left;
+$(".container-popover").css("transform", "translate3d(calc(" + lefts + "px - 150px), " + tops + "px, 0px)");
 
 $(".main-stage-question").on('scroll', function () {
   var top = $("#coba").offset().top;
