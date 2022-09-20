@@ -753,7 +753,10 @@ body {
   display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 834px) {
+  .x-button-mobile{
+    display: none !important;
+  }
   .sidebar-right-button {
     display: block;
   }
@@ -792,9 +795,6 @@ body {
     left: -15px;
     transform: rotate(180deg);
   }
-  .mt-sm-152px {
-    margin-top: 152px !important;
-  }
   .navbar .navbar-collapse .navbar-nav a {
     text-align: center;
   }
@@ -803,39 +803,6 @@ body {
   }
   .navbar .navbar-collapse form .navbar-form-control {
     width: 100%;
-  }
-  #login .modal-dialog {
-    width: 95% !important;
-  }
-  #login .modal-dialog .modal-content .row :first-child {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 0px;
-  }
-  #login .modal-dialog .modal-content .row :first-child div:nth-child(1) {
-    display: block;
-  }
-  #login .modal-dialog .modal-content .row :first-child div:nth-child(1) a {
-    font-size: 28px !important;
-  }
-  #login .modal-dialog .modal-content .row :first-child div:nth-child(2) {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-  }
-  #login .modal-dialog .modal-content .row :last-child {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  #login .modal-dialog .modal-content .row :last-child div:nth-child(1) a {
-    display: none;
-  }
-  #login .modal-dialog .modal-content .row :last-child div:nth-child(2) {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  #login .modal-dialog .modal-content .form-login input {
-    width: 100% !important;
-    height: 48.5px;
   }
   .page-body .stage {
     display: none;
@@ -1010,6 +977,45 @@ body {
   }
   .page-body .sidebar-right .sidebar-body .nav .nav-item.open .sidebar-content {
     display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .mt-sm-152px {
+    margin-top: 152px !important;
+  }
+  #login .modal-dialog {
+    width: 95% !important;
+  }
+  #login .modal-dialog .modal-content .row :first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
+  #login .modal-dialog .modal-content .row :first-child div:nth-child(1) {
+    display: block;
+  }
+  #login .modal-dialog .modal-content .row :first-child div:nth-child(1) a {
+    font-size: 28px !important;
+  }
+  #login .modal-dialog .modal-content .row :first-child div:nth-child(2) {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  #login .modal-dialog .modal-content .row :last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  #login .modal-dialog .modal-content .row :last-child div:nth-child(1) a {
+    display: none;
+  }
+  #login .modal-dialog .modal-content .row :last-child div:nth-child(2) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  #login .modal-dialog .modal-content .form-login input {
+    width: 100% !important;
+    height: 48.5px;
   }
   .page-body .main-login .img-login .stick-left {
     position: absolute;
@@ -1207,6 +1213,38 @@ body {
   }
 }
 @media (max-width: 1024px) {
+    .page-body#map-journey .map-journey-content .item.item-1 {
+    top: 0vh !important;
+    left: 14px;
+  }
+  .page-body#map-journey .map-journey-content .item.item-2 {
+    top: 0vh !important;
+    left: 47vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-3 {
+    top: 0vh !important;
+    left: 80vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-4 {
+    top: 120px !important;
+    left: 67vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-5 {
+    top: 120px !important;
+    left: 30vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-6 {
+    top: 180px !important;
+    left: 0vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-7 {
+    top: 260px !important;
+    left: 40vw;
+  }
+  .page-body#map-journey .map-journey-content .item.item-8 {
+    top: 260px !important;
+    left: 78vw;
+  }
   .card {
     min-height: 430px !important;
   }

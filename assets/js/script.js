@@ -14,7 +14,7 @@ $(document).ready(function () {
     toggleSidebarRight();
   });
 
-  if (screen.width <= 576) {
+  if (screen.width <= 834) {
     var navbar_sticky = $(".navbar-sticky").height();
     var sidebar_right = $(".sidebar-right").height();
     $(".sidebar-right .sidebar-content").css('height', 'calc(100vh - ' + navbar_sticky + 'px - ' + sidebar_right + 'px)');
