@@ -21,6 +21,10 @@ body {
   width: 100%;
 }
 
+.rounded-20px{
+  border-radius: 20px !important;
+}
+
 .w-custom-75 {
   width: 75% !important;
 }
